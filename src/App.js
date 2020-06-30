@@ -13,7 +13,7 @@ class App extends Component {
             save_to_default_model_directory: true
         };
         try {
-            const response = await axios.post('http://srv8-mambeala:5005/model/train', data);
+            const response = await axios.post('http://localhost:5005/model/train', data);
             console.log(response);
             console.log(response.headers);
         } catch (e) {
